@@ -1,15 +1,19 @@
 # カスタム ====
+
 ※jupyter notebookがしんどいのでエディタ+cliでやる
 
 __docker立ち上げ__
+
 ```
 docker-compose up -d
 ```
 
 __問題確認__
+
 http://localhost:8888/lab/tree/work/preprocess_knock_SQL.ipynb
 
 __postgres接続__
+
 ```
 docker ps # posgresqlのcontainer_idを調べる
 docker exec -it <container id> /bin/sh
@@ -17,6 +21,7 @@ psql -U padawan -d dsdojo_db
 ```
 
 __ファイル実行__
+
 ```
 dsdojo_db=> \i /sql/<number>.sql
 ```
